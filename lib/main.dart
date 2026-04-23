@@ -11,15 +11,29 @@ void main() {
             title: Text('Home Page'),
           ),
           body: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.network(
                 img_url,
                 fit: BoxFit.cover
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.share,color:Colors.amber,size:50,),
+                  Icon(Icons.navigation,color:Colors.amber,size:50,),
+                  Icon(Icons.favorite,color:Colors.amber,size:50,),
+                ],
+              ),
+              Padding(padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 8),
+                child: Text(
+                  'Kity',
+                  style: TextStyle(fontSize: 25),
+                ),
+             ),
               Text(
                 loremipsum,
-                style: TextStyle(fontSize: 14),
+                style: TextStyle(fontSize: 16),
               ),
             ],
           ),
