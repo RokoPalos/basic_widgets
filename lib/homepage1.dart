@@ -43,7 +43,8 @@ class Homepage1 extends StatelessWidget{
           ),
         ],
       ),
-    ),
+    );
   }
+
 
 }
